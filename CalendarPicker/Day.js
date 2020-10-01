@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 
 export default function Day(props) {
+  
   const {
     day,
     month,
@@ -169,6 +170,12 @@ export default function Day(props) {
         if (thisDay.isBetween(selectedStartDate, selectedEndDate, 'day')) {
           daySelectedStyle = [styles.inRangeDay, selectedRangeStyle];
           selectedDayColorStyle = styles.selectedDayLabel;
+        }
+        if(thisDay.get('day') == 0) {
+          daySelectedStyle = [daySelectedStyle, { borderTopRightRadius: 15,  borderBottomRightRadius: 15 }];
+        }
+        if(thisDay.get('day') == 1) {
+          daySelectedStyle = [daySelectedStyle, { borderTopLeftRadius: 15,  borderBottomLeftRadius: 15 }];
         }
       }
       // Apply style if start date has been selected but end date has not
