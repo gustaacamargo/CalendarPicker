@@ -60,8 +60,6 @@ export function makeStyles(params) {
 
     dayLabelsWrapper: {
       flexDirection: 'row',
-      borderBottomWidth: 1,
-      borderTopWidth: 1,
       paddingTop: 10*scaler,
       paddingBottom: 10*scaler,
       alignSelf: 'center',
@@ -146,9 +144,9 @@ export function makeStyles(params) {
       justifyContent: 'space-between',
       width: containerWidth,
       padding: 5*scaler,
-      paddingBottom: 3*scaler,
-      marginBottom: 10*scaler,
-      backgroundColor: 'rgba(0,0,0,0.0)'
+      paddingBottom: 22*scaler,
+      marginBottom: 3*scaler,
+      backgroundColor: 'rgba(0,0,0,0.0)',
     },
 
     monthYearHeaderWrapper: {

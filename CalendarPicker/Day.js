@@ -186,7 +186,7 @@ export default function Day(props) {
           disabled={!enableDateChange}
           style={[customDateStyle, daySelectedStyle, propSelectedDayStyle ]}
           onPress={() => onPressDay({year, month, day}) }>
-          <Text style={[styles.dayLabel, textStyle, customTextStyle, selectedDayColorStyle]}>
+          <Text style={[styles.dayLabel, textStyle, customTextStyle, selectedDayColorStyle, { fontWeight: '700', fontSize: 18 }]}>
             { day }
           </Text>
         </TouchableOpacity>
